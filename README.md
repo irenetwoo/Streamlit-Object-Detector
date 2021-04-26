@@ -1,1 +1,1 @@
-# Object-Detection-with-Detectron2-and-Streamlit
+# Image-Detection-with-Detectron2-and-Streamlit
