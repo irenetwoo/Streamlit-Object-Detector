@@ -13,4 +13,6 @@ from detectron2.utils.logger import setup_logger
 setup_logger()
 from PIL import Image
 import torch, torchvision
-assert torch.__version__.startswith("1.8") 
+#assert torch.__version__.startswith("1.8") 
+
+st.write('hello')
