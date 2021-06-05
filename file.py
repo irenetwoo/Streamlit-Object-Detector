@@ -15,12 +15,11 @@ from PIL import Image
 import torch, torchvision
 
 st.markdown("""<style> .font {font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;}</style>""", unsafe_allow_html=True)
-st.markdown('<p class="font">Guess the object Names</p>', unsafe_allow_html=True)
-st.markdown('** Can you name the items in the picture correctly? **')
-st.markdown('This App will detect items in it.')
+st.markdown('<p class="font">Naming Objects</p>', unsafe_allow_html=True)
+st.markdown('** Find the items in the picture labelled wrongly **')
 st.markdown('1. Upload a photo')
 st.markdown('2. A button will later appear at the bottom. Click it !')
-st.markdown('Can you find any object wrongly named?')
+
 
 @st.cache(allow_output_mutation=True, max_entries=10, ttl=3600)
 def initialization():
