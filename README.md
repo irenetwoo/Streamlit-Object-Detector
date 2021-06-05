@@ -7,9 +7,10 @@ Put to public on 4 June 2021.
 
 Ready-made App link: https://share.streamlit.io/irenetwoo/streamlit-object-detector/main/file.py
 
-Run this app: 
+To run this app: 
 ```
-!streamlit run file.py
+pip install requirements.txt
+streamlit run file.py
 ```
 
 This app uses a part of detection code from Javier Esteve on https://github.com/xavialex/Detectron2-Instance-Segmentation.  <br>
