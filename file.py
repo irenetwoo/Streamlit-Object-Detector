@@ -21,7 +21,7 @@ st.markdown('1. Upload a photo')
 st.markdown('2. A button will later appear at the bottom. Click it !')
 
 
-@st.cache(allow_output_mutation=True, max_entries=10, ttl=3600)
+@st.cache(suppress_st_warning=True, persist=True, allow_output_mutation=True, max_entries=10, ttl=3600)
 def initialization():
     cfg = get_cfg()
     cfg.MODEL.DEVICE = 'cpu'
