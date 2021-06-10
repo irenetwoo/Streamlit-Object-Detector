@@ -4,7 +4,6 @@ import shutil
 import os
 import numpy as np
 import random
-import gc
 from detectron2 import model_zoo
 from detectron2.engine import DefaultPredictor
 from detectron2.config import get_cfg
@@ -14,6 +13,7 @@ from detectron2.utils.logger import setup_logger
 setup_logger()
 from PIL import Image
 import torch, torchvision
+
 st.markdown("""<style> .font {font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;}</style>""", unsafe_allow_html=True)
 st.markdown('<p class="font">Name The Objects</p>', unsafe_allow_html=True)
 st.markdown('** Find the items in the picture labelled wrongly **')
@@ -60,7 +60,6 @@ def main():
           st.markdown('')
           st.markdown('By [IreneToo](https://github.com/irenetwoo/Streamlit-Object-Detector)')
           st.write('This app uses a part of detection code from  Javier Esteve repo https://github.com/xavialex/Detectron2-Instance-Segmentation. Many thanks to this project.')
-          gc.collect()
 if __name__ == '__main__':
     main()
 
