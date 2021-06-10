@@ -14,7 +14,6 @@ from detectron2.utils.logger import setup_logger
 setup_logger()
 from PIL import Image
 import torch, torchvision
-
 st.markdown("""<style> .font {font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;}</style>""", unsafe_allow_html=True)
 st.markdown('<p class="font">Name The Objects</p>', unsafe_allow_html=True)
 st.markdown('** Find the items in the picture labelled wrongly **')
