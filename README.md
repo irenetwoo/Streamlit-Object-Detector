@@ -7,7 +7,7 @@ Put to public on 4 June 2021.
 
 
 Ready-made App link: https://share.streamlit.io/irenetwoo/streamlit-object-detector/main/file.py <br>
-Demo : 
+
 
 
 To run this app: 
