@@ -62,8 +62,3 @@ def main():
           st.write('This app uses a part of detection code from  Javier Esteve repo https://github.com/xavialex/Detectron2-Instance-Segmentation. Many thanks to this project.')
 if __name__ == '__main__':
     main()
-
-    
-
-
-
