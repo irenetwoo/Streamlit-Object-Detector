@@ -6,4 +6,3 @@ torchvision==0.9.1
 torchaudio===0.8.1
 streamlit==0.81.1
 opencv-python-headless==4.5.2.52
-
