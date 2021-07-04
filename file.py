@@ -31,8 +31,6 @@ def initialization():
 @st.cache(suppress_st_warning=True, persist=True, max_entries=10, ttl=3600)
 def inference(predictor, img):
     return predictor(img)
-
-# @st.cache(suppress_st_warning=True, persist=True, max_entries=10, ttl=3600)
 def output_image(cfg, img, outputs):
     metadata_ = MetadataCatalog.get(cfg.DATASETS.TRAIN[0])
     v = Visualizer(img[:, :, ::-1], MetadataCatalog.get(cfg.DATASETS.TRAIN[0]), scale=3.0)
