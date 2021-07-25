@@ -13,7 +13,6 @@ from detectron2.utils.logger import setup_logger
 setup_logger()
 from PIL import Image
 import torch, torchvision
-
 st.markdown("""<style> .font {font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;}</style>""", unsafe_allow_html=True)
 st.markdown('<p class="font">Name The Objects</p>', unsafe_allow_html=True)
 st.markdown('** Find the items in the picture labelled wrongly **')
@@ -31,7 +30,6 @@ def initialization():
 @st.cache(suppress_st_warning=True, persist=True, max_entries=10, ttl=3600)
 def inference(predictor, img):
     return predictor(img)
-@st.cache(suppress_st_warning=True, persist=True, max_entries=10, ttl=3600)
 def output_image(cfg, img, outputs):
     metadata_ = MetadataCatalog.get(cfg.DATASETS.TRAIN[0])
     v = Visualizer(img[:, :, ::-1], MetadataCatalog.get(cfg.DATASETS.TRAIN[0]), scale=3.0)
