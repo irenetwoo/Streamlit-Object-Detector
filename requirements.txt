@@ -4,5 +4,5 @@ gcc7==0.0.7
 torch==1.8.1
 torchvision==0.9.1
 torchaudio===0.8.1
-streamlit==1.11.0
+streamlit==1.10.0
 opencv-python-headless==4.5.2.52
