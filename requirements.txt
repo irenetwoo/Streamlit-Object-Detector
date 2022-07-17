@@ -1,7 +1,7 @@
 pip==22.1.2
 pycocotools==2.0.4
-gcc7==0.0.9
-git+https://github.com/facebookresearch/detectron2.git#egg=detectron2
+tensorboard==2.9.1
+gcc7==0.0.7
 opencv-python-headless==4.6.0.66
 streamlit==1.10.0
 torch==1.12.0
