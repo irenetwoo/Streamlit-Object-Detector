@@ -16,7 +16,7 @@ from PIL import Image
 import torch, torchvision
 st.markdown("""<style> .font {font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;}</style>""", unsafe_allow_html=True)
 st.markdown('<p class="font">Name The Objects</p>', unsafe_allow_html=True)
-st.markdown('** Find the items in the picture labelled wrongly **')
+st.markdown('**Find the items in the picture labelled wrongly**')
 st.markdown('1. Upload a photo')
 st.markdown('2. A button will later appear at the bottom. Click it !')
 @st.cache(suppress_st_warning=True, persist=True, max_entries=10, ttl=3600)
