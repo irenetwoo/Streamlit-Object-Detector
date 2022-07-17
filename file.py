@@ -58,6 +58,8 @@ def main():
           st.image(out_image, caption=' After ', use_column_width=True)   
           st.markdown(' **Can you find any item(s) labelled wrongly in the picture ?** ')
           st.markdown('')
+          st.markdown('**Please remove the uploaded photo after using this App. Thanks!**')
+          st.markdown('')
           st.markdown('By [IreneToo](https://github.com/irenetwoo/Streamlit-Object-Detector)')
           st.write('This app uses a part of detection code from  Javier Esteve repo https://github.com/xavialex/Detectron2-Instance-Segmentation. Many thanks to this project.')
 if __name__ == '__main__':
