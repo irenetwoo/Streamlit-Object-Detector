@@ -1,4 +1,4 @@
-# Object-Detection-with-Detectron2-and-Streamlit
+# Object-Detector-with-Detectron2-and-Streamlit
 
 
 
@@ -14,5 +14,5 @@ pip install requirements.txt
 streamlit run file.py
 ```
 
-This app uses a part of detection code from Javier Esteve on https://github.com/xavialex/Detectron2-Instance-Segmentation.  <br>
+This app uses a part of detection code from Javier Esteve on https://github.com/xavialex/Detectron2-Instance-Segmentation. <br>
 Many thanks to this project author.
