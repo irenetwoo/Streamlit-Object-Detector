@@ -10,15 +10,15 @@ from detectron2.config import get_cfg
 from detectron2.utils.visualizer import Visualizer
 from detectron2.data import MetadataCatalog, DatasetCatalog
 from detectron2.utils.logger import setup_logger
-
-setup_logger()
 from PIL import Image
 import torch, torchvision
+setup_logger()
 st.markdown("""<style> .font {font-size:50px ; font-family: 'Cooper Black'; color: #FF9633;}</style>""", unsafe_allow_html=True)
 st.markdown('<p class="font">Name The Objects</p>', unsafe_allow_html=True)
 st.markdown('**Find the items in the picture labelled wrongly**')
 st.markdown('1. Upload a photo')
 st.markdown('2. A button will later appear at the bottom. Click it !')
+
 @st.cache(suppress_st_warning=True, persist=True, max_entries=10, ttl=3600)
 def initialization():
     cfg = get_cfg()
@@ -28,9 +28,11 @@ def initialization():
     cfg.MODEL.WEIGHTS = model_zoo.get_checkpoint_url("LVISv0.5-InstanceSegmentation/mask_rcnn_R_101_FPN_1x.yaml")
     predictor = DefaultPredictor(cfg)
     return cfg, predictor
+    
 @st.cache(suppress_st_warning=True, persist=True, max_entries=10, ttl=3600)
 def inference(predictor, img):
     return predictor(img)
+    
 @st.cache(suppress_st_warning=True, persist=True, max_entries=10, ttl=3600)
 def output_image(cfg, img, outputs):
     metadata_ = MetadataCatalog.get(cfg.DATASETS.TRAIN[0])
@@ -41,6 +43,7 @@ def output_image(cfg, img, outputs):
     out = v.draw_instance_predictions(outputs["instances"].to("cpu"))
     processed_img = out.get_image()
     return processed_img
+    
 def main():
     cfg, predictor = initialization()
     uploaded_img = st.file_uploader("Upload a photo here", type=['jpg', 'jpeg', 'png'])
